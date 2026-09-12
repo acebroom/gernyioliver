@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gérnyi Olivér — Fotózás &amp; Videózás | Vas megye</title>
+<meta name="description" content="Gérnyi Olivér fotográfus és videós portfóliója. Portré, esküvő, gasztro, termék és rendezvény fotózás, valamint videókészítés Vas megyében és környékén." />
+<meta name="theme-color" content="#efece4" />
+
+<!-- ==========================================================================
+     FONTOS — GITHUB PAGES ÉLESÍTÉS UTÁN:
+     Ha tudod a végleges élő URL-t (pl. https://felhasznalonev.github.io/repo-nev/),
+     írd be az alábbi 3 helyre (canonical, og:url, og:image, twitter:image) a
+     relatív útvonal helyett a TELJES, https://-vel kezdődő címet. Enélkül a
+     Facebook/Messenger/Twitter megosztás előnézeti képe egyes platformokon
+     nem fog betölteni, mert az relatív útvonalat sok crawler nem old fel.
+     ========================================================================== -->
+<link rel="canonical" href="https://gernyioliver-portfolio.example.com/" />
+
+<!-- Favicon -->
+<link rel="icon" href="favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="images/favicon/favicon-192x192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+
+<!-- Open Graph / Facebook / Messenger megosztási előnézet -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Gérnyi Olivér Fotózás &amp; Videózás" />
+<meta property="og:title" content="Gérnyi Olivér — Fotózás &amp; Videózás | Vas megye" />
+<meta property="og:description" content="Professzionális fotós és videós szolgáltatások Vas megyében és a környező településeken — portré, esküvő, gasztro, termék és rendezvény fotózás." />
+<meta property="og:url" content="https://gernyioliver-portfolio.example.com/" />
+<meta property="og:image" content="https://gernyioliver-portfolio.example.com/images/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Gérnyi Olivér — Fotózás és Videózás" />
+<meta property="og:locale" content="hu_HU" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Gérnyi Olivér — Fotózás & Videózás | Vas megye" />
+<meta name="twitter:description" content="Professzionális fotós és videós szolgáltatások Vas megyében és a környező településeken." />
+<meta name="twitter:image" content="https://gernyioliver-portfolio.example.com/images/og-image.jpg" />
+
+<!-- Google Fonts: Bodoni Moda (karakteres, magazinos display-betű a
+     címsorokhoz) + Archivo (letisztult, semleges sans-serif a
+     szövegtörzshöz és a felülethez) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Archivo:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
+
+<link rel="stylesheet" href="style.css" />
+
+<!-- Schema.org strukturált adat — segíti a Google-t helyi fotós/videós
+     vállalkozásként azonosítani az oldalt (Google Térkép / helyi keresés). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Photographer",
+  "name": "Gérnyi Olivér",
+  "image": "https://gernyioliver-portfolio.example.com/images/og-image.jpg",
+  "url": "https://gernyioliver-portfolio.example.com/",
+  "email": "mailto:gernyioliver0824@gmail.com",
+  "sameAs": [
+    "https://instagram.com/gernyi.oliver_photography"
+  ],
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Vas megye és környező települések"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "Vas megye",
+    "addressCountry": "HU"
+  },
+  "description": "Professzionális fotós és videós szolgáltatások: portré, esküvő, gasztro, termék és rendezvény fotózás, valamint reklám- és imázsvideó készítés Vas megyében és környékén.",
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Egyéni, csoportos, kisállat fotózás" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Igazolványkép és portré fotó" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gasztro fotózás" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Termék reklám fotózás" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reklám, image és Shorts videó készítés" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rendezvény fotózás és videózás" } }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ==========================================================================
+     FEJLÉC / NAVIGÁCIÓ
+     ========================================================================== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#hero" class="logo">GÉRNYI<span>OLIVÉR</span></a>
+
+    <nav class="nav-desktop" aria-label="Fő navigáció">
+      <a href="#gallery">Portfólió</a>
+      <a href="#services">Szolgáltatások</a>
+      <a href="#about">Rólam</a>
+      <a href="#contact">Kapcsolat</a>
+    </nav>
+
+    <button class="hamburger" aria-label="Menü megnyitása" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobil menü: csak a jobb oldalt fedi le, a bal oldal finoman elhomályosodik -->
+<div class="mobile-menu-overlay"></div>
+<nav class="mobile-menu" aria-label="Mobil navigáció">
+  <button class="mobile-menu-close" aria-label="Menü bezárása">&times;</button>
+  <a href="#hero">Főoldal</a>
+  <a href="#gallery">Portfólió</a>
+  <a href="#services">Szolgáltatások</a>
+  <a href="#about">Rólam</a>
+  <a href="#contact">Kapcsolat</a>
+
+  <div class="mobile-menu-footer">
+    <a href="mailto:gernyioliver0824@gmail.com">gernyioliver0824@gmail.com</a>
+    <a href="https://instagram.com/gernyi.oliver_photography" target="_blank" rel="noopener">@gernyi.oliver_photography</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ==========================================================================
+       HERO
+       ========================================================================== -->
+  <section id="hero" class="hero">
+    <div class="hero-media" aria-hidden="true"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <p class="eyebrow">Fotográfia &amp; Film — Vas megye</p>
+      <h1>Gérnyi Olivér<span class="hero-sub-line">Fotózás &amp; Videókészítés</span></h1>
+      <p class="hero-lead">
+        Professzionális fotós és videós szolgáltatások Vas megyében és a
+        környező településeken — természetes, hangulatos, kreatív szemlélettel.
+      </p>
+      <div class="hero-cta">
+        <a href="#gallery" class="btn btn-primary">Portfólió megtekintése</a>
+        <a href="#contact" class="btn btn-outline">Ajánlatkérés</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ==========================================================================
+       GALÉRIA
+       ========================================================================== -->
+  <section id="gallery" class="gallery-section">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Portfólió</p>
+      <h2>Munkáim</h2>
+    </div>
+
+    <!-- Portré-válogatás — szétszórt, "kifüggesztett fotók" hangulatú
+         elrendezés, mappa-struktúra nélkül. -->
+    <div class="scatter-wall reveal" aria-label="Portréfotózás — válogatás">
+      <figure class="scatter-item"><img src="images/portre-uj/portre-uj_01.jpg" alt="Stúdiós fekete-fehér portréfotó" loading="lazy" decoding="async" /></figure>
+      <figure class="scatter-item"><img src="images/portre-uj/portre-uj_05.jpg" alt="Portréfotózás alkonyati fényben, teraszon" loading="lazy" decoding="async" /></figure>
+      <figure class="scatter-item"><img src="images/portre-uj/portre-uj_09.jpg" alt="Portréfotó hangulatos, sötét stúdiófényben" loading="lazy" decoding="async" /></figure>
+      <figure class="scatter-item"><img src="images/portre-uj/portre-uj_02.jpg" alt="Stúdiós fekete-fehér portréfotó" loading="lazy" decoding="async" /></figure>
+      <figure class="scatter-item"><img src="images/portre-uj/portre-uj_06.jpg" alt="Portréfotózás lépcsőn, esti hangulatban" loading="lazy" decoding="async" /></figure>
+      <figure class="scatter-item"><img src="images/portre-uj/portre-uj_10.jpg" alt="Portréfotó meleg, színes stúdiófényben" loading="lazy" decoding="async" /></figure>
+      <figure class="scatter-item"><img src="images/portre-uj/portre-uj_03.jpg" alt="Stúdiós fekete-fehér portréfotó" loading="lazy" decoding="async" /></figure>
+      <figure class="scatter-item"><img src="images/portre-uj/portre-uj_07.jpg" alt="Portréfotózás padon, naplemente előtt" loading="lazy" decoding="async" /></figure>
+      <figure class="scatter-item"><img src="images/portre-uj/portre-uj_11.jpg" alt="Portréfotó vörös stúdiófényben" loading="lazy" decoding="async" /></figure>
+      <figure class="scatter-item"><img src="images/portre-uj/portre-uj_04.jpg" alt="Portréfotózás padon, természetes fényben" loading="lazy" decoding="async" /></figure>
+      <figure class="scatter-item"><img src="images/portre-uj/portre-uj_08.jpg" alt="Portréfotózás korlátnál, alkonyati fényben" loading="lazy" decoding="async" /></figure>
+    </div>
+
+  </section>
+
+  <!-- ==========================================================================
+       SZOLGÁLTATÁSOK
+       ========================================================================== -->
+  <section id="services" class="services-section">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Szolgáltatások</p>
+      <h2>Milyen fotózásokat vállalok?</h2>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="3" width="14" height="18" rx="1.5"/>
+            <circle cx="12" cy="10" r="2.6"/>
+            <path d="M8 17.5c.7-2 2-3 4-3s3.3 1 4 3"/>
+          </svg>
+        </div>
+        <h3>Igazolványkép &amp; Portré fotó</h3>
+        <p>Hivatalos igazolványkép és karakteres portré, stúdióban vagy szabadtéren.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2.5" y="5.5" width="14" height="13" rx="1.5"/>
+            <path d="M16.5 10l5-3v10l-5-3"/>
+          </svg>
+        </div>
+        <h3>Reklám &amp; Image videók, Shorts</h3>
+        <p>Reklám- és imázsvideók, valamint dinamikus, rövid Shorts tartalmak.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 21V9l8-6 8 6v12"/>
+            <path d="M9 21v-7h6v7"/>
+          </svg>
+        </div>
+        <h3>Rendezvény fotózás &amp; videózás</h3>
+        <p>Esküvők, céges rendezvények és privát ünnepségek teljes körű dokumentálása.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       RÓLAM
+       ========================================================================== -->
+  <section id="about" class="about-section">
+    <div class="about-grid">
+      <div class="about-media reveal">
+        <div class="about-media-frame">
+          <img src="images/about/profile.jpg" alt="Gérnyi Olivér fényképezőgéppel a kezében" loading="lazy" decoding="async" />
+        </div>
+        <div class="about-media-tag">Fotográfus &amp; Videós</div>
+      </div>
+
+      <div class="about-content reveal">
+        <p class="eyebrow">Rólam</p>
+        <h2>Gérnyi Olivér</h2>
+
+        <p>
+          Egy média klub keretein belül ismerkedtem meg a fotózással,
+          videózással. Azonnal beleszerettem, és a hobbimmá vált. Nagyjából
+          három éve gyakorlom a szakma különböző ágait, minden részét
+          kedvelem, nem tudnék kedvencet mondani.
+        </p>
+        <p>
+          Számomra az alkotás mindig is fontos volt, szeretem megörökíteni a
+          pillanatot, a saját kreativitásomat, nézőpontomat beleszőve.
+          Folyamatosan igyekszem fejlődni, tanulni.
+        </p>
+        <p>
+          Ha három szóban kéne jellemeznem a filozófiámat a fotózással
+          kapcsolatban, ezt mondanám:
+        </p>
+
+        <div class="about-philosophy">
+          <span>Természetes</span>
+          <span>Hangulatos</span>
+          <span>Kreatív</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INSTAGRAM SÁV
+       Statikus előnézeti csík valós munkákból, kifelé linkelve a profilra.
+       ========================================================================== -->
+  <section id="instagram" class="instagram-section">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Közösségi média</p>
+      <h2>Kövess Instagramon</h2>
+    </div>
+
+    <div class="insta-scroll reveal">
+      <div class="insta-grid">
+        <a class="insta-tile" href="https://instagram.com/gernyi.oliver_photography" target="_blank" rel="noopener" aria-label="Megnyitás Instagramon">
+          <img src="images/portre-uj/portre-uj_01.jpg" alt="" loading="lazy" decoding="async" />
+          <span class="insta-tile-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </span>
+        </a>
+        <a class="insta-tile" href="https://instagram.com/gernyi.oliver_photography" target="_blank" rel="noopener" aria-label="Megnyitás Instagramon">
+          <img src="images/gallery/etel/etel_03.jpg" alt="" loading="lazy" decoding="async" />
+          <span class="insta-tile-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </span>
+        </a>
+        <a class="insta-tile" href="https://instagram.com/gernyi.oliver_photography" target="_blank" rel="noopener" aria-label="Megnyitás Instagramon">
+          <img src="images/portre-uj/portre-uj_06.jpg" alt="" loading="lazy" decoding="async" />
+          <span class="insta-tile-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </span>
+        </a>
+        <a class="insta-tile" href="https://instagram.com/gernyi.oliver_photography" target="_blank" rel="noopener" aria-label="Megnyitás Instagramon">
+          <img src="images/gallery/utcakepek/utcakep_03.jpg" alt="" loading="lazy" decoding="async" />
+          <span class="insta-tile-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </span>
+        </a>
+        <a class="insta-tile" href="https://instagram.com/gernyi.oliver_photography" target="_blank" rel="noopener" aria-label="Megnyitás Instagramon">
+          <img src="images/portre-uj/portre-uj_10.jpg" alt="" loading="lazy" decoding="async" />
+          <span class="insta-tile-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="insta-cta reveal">
+      <a href="https://instagram.com/gernyi.oliver_photography" target="_blank" rel="noopener" class="btn btn-outline">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+        @gernyi.oliver_photography
+      </a>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       KAPCSOLAT
+       ========================================================================== -->
+  <section id="contact" class="contact-section">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Kapcsolat</p>
+      <h2>Kérj ajánlatot</h2>
+    </div>
+
+    <div class="contact-grid reveal">
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Név</label>
+            <input type="text" id="name" name="name" placeholder="Teljes név" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="pelda@email.com" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="service">Kiválasztott szolgáltatás</label>
+          <select id="service" name="service">
+            <option value="Egyéni, csoportos, kisállat fotózás">Egyéni, csoportos, kisállat fotózás</option>
+            <option value="Igazolványkép / Portré fotó">Igazolványkép / Portré fotó</option>
+            <option value="Gasztro fotózás">Gasztro fotózás</option>
+            <option value="Termék reklám fotózás">Termék reklám fotózás</option>
+            <option value="Reklám / Image / Shorts videó">Reklám / Image / Shorts videó</option>
+            <option value="Rendezvény fotózás és videózás">Rendezvény fotózás és videózás</option>
+            <option value="Egyéb / nem biztos vagyok benne">Egyéb / nem biztos vagyok benne</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Üzenet</label>
+          <textarea id="message" name="message" placeholder="Mesélj pár szóban az elképzelésedről, a helyszínről és az időpontról…" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary form-submit">Ajánlatot kérek</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+
+      <div class="contact-info">
+        <div class="info-block">
+          <h3>Email</h3>
+          <a href="mailto:gernyioliver0824@gmail.com">gernyioliver0824@gmail.com</a>
+        </div>
+        <div class="info-block">
+          <h3>Instagram</h3>
+          <a href="https://instagram.com/gernyi.oliver_photography" target="_blank" rel="noopener">@gernyi.oliver_photography</a>
+        </div>
+        <div class="info-block">
+          <h3>Működési terület</h3>
+          <p>Vas megye és környező települések</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==========================================================================
+     LÁBLÉC
+     ========================================================================== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>&copy; <span id="year"></span> Gérnyi Olivér — Fotózás &amp; Videózás. Minden jog fenntartva.</p>
+    <div class="footer-links">
+      <a href="mailto:gernyioliver0824@gmail.com">Email</a>
+      <a href="https://instagram.com/gernyi.oliver_photography" target="_blank" rel="noopener">Instagram</a>
+      <a href="#hero">Vissza a tetejére &#8593;</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
